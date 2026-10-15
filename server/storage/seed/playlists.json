@@ -1,0 +1,89 @@
+[
+  {
+    "id": "dem-khong-ngu",
+    "name": "Đêm không ngủ",
+    "description": "Khi thành phố đã ngủ còn bạn thì chưa.",
+    "songIds": [
+      "glass-hours",
+      "chrome-hearts",
+      "gac-mai",
+      "last-train-home",
+      "blue-before-day",
+      "low-tide"
+    ],
+    "ownerId": null,
+    "coverPath": "covers/playlists/dem-khong-ngu.jpg",
+    "isPublic": true,
+    "createdAt": "2026-10-01T00:00:00.000Z",
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "ca-phe-va-mua",
+    "name": "Cà phê & mưa",
+    "description": "Lo-fi và những giai điệu chậm cho ngày mưa.",
+    "songIds": [
+      "mua-pho-cu",
+      "ca-phe-sang",
+      "tram-28",
+      "velvet-sunday",
+      "northern-drift",
+      "gac-mai"
+    ],
+    "ownerId": null,
+    "coverPath": "covers/playlists/ca-phe-va-mua.jpg",
+    "isPublic": true,
+    "createdAt": "2026-10-01T00:00:00.000Z",
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "tap-trung-sau",
+    "name": "Tập trung sâu",
+    "description": "Ít lời, đều nhịp — để bạn chìm vào công việc.",
+    "songIds": [
+      "ho-guom-5am",
+      "pixel-rain",
+      "glacier-light",
+      "northern-drift",
+      "ca-phe-sang"
+    ],
+    "ownerId": null,
+    "coverPath": "covers/playlists/tap-trung-sau.jpg",
+    "isPublic": true,
+    "createdAt": "2026-10-01T00:00:00.000Z",
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "nang-luong-buoi-sang",
+    "name": "Năng lượng buổi sáng",
+    "description": "Bật lên và bắt đầu một ngày thật tươi.",
+    "songIds": [
+      "overdrive",
+      "neon-umbrella",
+      "midnight-arcade",
+      "afterglow",
+      "golden-hour"
+    ],
+    "ownerId": null,
+    "coverPath": "covers/playlists/nang-luong-buoi-sang.jpg",
+    "isPublic": true,
+    "createdAt": "2026-10-01T00:00:00.000Z",
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "mo-giua-ban-ngay",
+    "name": "Mơ giữa ban ngày",
+    "description": "Bồng bềnh, mềm mại và một chút lãng mạn.",
+    "songIds": [
+      "paper-moons",
+      "afterglow",
+      "slow-bloom",
+      "honey-static",
+      "glass-hours"
+    ],
+    "ownerId": null,
+    "coverPath": "covers/playlists/mo-giua-ban-ngay.jpg",
+    "isPublic": true,
+    "createdAt": "2026-10-01T00:00:00.000Z",
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  }
+]

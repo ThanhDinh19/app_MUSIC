@@ -1,0 +1,58 @@
+[
+  {
+    "id": "late-night",
+    "name": "Đêm muộn",
+    "color": "#5cc8f0",
+    "description": "Cho những giờ thức khuya, khi phố đã lên đèn và mọi thứ chậm lại.",
+    "sortOrder": 0,
+    "coverPath": "covers/moods/late-night.jpg"
+  },
+  {
+    "id": "dreamy",
+    "name": "Mơ màng",
+    "color": "#f28cc0",
+    "description": "Lơ lửng, mềm mại, như đang trôi giữa những tầng mây.",
+    "sortOrder": 1,
+    "coverPath": "covers/moods/dreamy.jpg"
+  },
+  {
+    "id": "calm",
+    "name": "Bình yên",
+    "color": "#5fd6a0",
+    "description": "Thở chậm lại. Những giai điệu nhẹ nhàng để thư giãn.",
+    "sortOrder": 2,
+    "coverPath": "covers/moods/calm.jpg"
+  },
+  {
+    "id": "melancholy",
+    "name": "Sầu lắng",
+    "color": "#8fa6ff",
+    "description": "Một chút buồn, một chút nhớ — vừa đủ để thấy mình.",
+    "sortOrder": 3,
+    "coverPath": "covers/moods/melancholy.jpg"
+  },
+  {
+    "id": "energised",
+    "name": "Sôi động",
+    "color": "#ffb35c",
+    "description": "Nhịp nhanh, năng lượng cao cho buổi sáng hay lúc vận động.",
+    "sortOrder": 4,
+    "coverPath": "covers/moods/energised.jpg"
+  },
+  {
+    "id": "soulful",
+    "name": "Ấm áp",
+    "color": "#f5a48a",
+    "description": "Âm thanh mộc, ấm và gần gũi như một chiều Chủ nhật.",
+    "sortOrder": 5,
+    "coverPath": "covers/moods/soulful.jpg"
+  },
+  {
+    "id": "focus",
+    "name": "Tập trung",
+    "color": "#b9a3ff",
+    "description": "Đều đặn, ít lời — giúp bạn làm việc và học tập sâu hơn.",
+    "sortOrder": 6,
+    "coverPath": "covers/moods/focus.jpg"
+  }
+]

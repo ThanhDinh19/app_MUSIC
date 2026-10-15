@@ -1,0 +1,17 @@
+{
+  "name": "@nocturne/shared",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kiểu dữ liệu (API contract) dùng chung giữa client và server",
+  "type": "module",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p ."
+  }
+}

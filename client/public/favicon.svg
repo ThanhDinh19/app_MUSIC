@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d3566"/><stop offset=".55" stop-color="#43297a"/><stop offset="1" stop-color="#b13f7e"/></linearGradient>
+    <filter id="lb" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40.96"/></filter>
+    <mask id="crescent"><rect width="512" height="512" fill="#fff"/><circle cx="420" cy="112" r="46" fill="#000"/></mask>
+  </defs>
+  <rect width="512" height="512" rx="112.6" fill="url(#lg)"/>
+       <circle cx="128" cy="102.4" r="230.4" fill="#5cc8f0" opacity="0.25" filter="url(#lb)"/>
+  <g transform="translate(0.0 0.0) scale(1.0000)">
+    <g stroke="#ffffff" stroke-width="30" stroke-linecap="round"><line x1="112" y1="212" x2="112" y2="300"/><line x1="168" y1="160" x2="168" y2="352"/><line x1="224" y1="112" x2="224" y2="400"/><line x1="280" y1="168" x2="280" y2="344"/><line x1="336" y1="220" x2="336" y2="292"/></g>
+    <circle cx="396" cy="134" r="50" fill="#ffffff" mask="url(#crescent)"/>
+  </g>
+</svg>

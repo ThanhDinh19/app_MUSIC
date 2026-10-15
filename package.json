@@ -1,0 +1,30 @@
+{
+  "name": "nocturne",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nocturne — ứng dụng nghe nhạc PWA (React + TypeScript + Express)",
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c magenta,cyan \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client && npm run build -w server",
+    "start": "npm run start -w server",
+    "typecheck": "npm run typecheck -w shared && npm run typecheck -w server && npm run typecheck -w client",
+    "content:generate": "node scripts/demo-content/generate.mjs",
+    "setup:google": "node scripts/setup-google.mjs",
+    "data:reset": "npm run data:reset -w server"
+  },
+  "devDependencies": {
+    "@breezystack/lamejs": "^1.2.7",
+    "concurrently": "^10.0.6",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

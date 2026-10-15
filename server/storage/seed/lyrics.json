@@ -1,0 +1,1945 @@
+[
+  {
+    "songId": "glass-hours",
+    "language": "en",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 11.43,
+        "text": "Rain writes letters on the window glass"
+      },
+      {
+        "time": 14.29,
+        "text": "Neon bleeding into puddles as I pass"
+      },
+      {
+        "time": 17.14,
+        "text": "Every clock in Lisbon whispers half past two"
+      },
+      {
+        "time": 20,
+        "text": "And every empty street is leading back to you"
+      },
+      {
+        "time": 22.86,
+        "text": "Trams asleep beneath a violet sky"
+      },
+      {
+        "time": 25.71,
+        "text": "Shop signs flicker like they're learning how to lie"
+      },
+      {
+        "time": 28.57,
+        "text": "I keep the radio low, I keep the window wide"
+      },
+      {
+        "time": 31.43,
+        "text": "Counting all the colours that the city hides"
+      },
+      {
+        "time": 34.29,
+        "text": "We live in glass hours"
+      },
+      {
+        "time": 37.14,
+        "text": "Fragile and bright"
+      },
+      {
+        "time": 40,
+        "text": "Hold me before the morning"
+      },
+      {
+        "time": 42.86,
+        "text": "Breaks through the night"
+      },
+      {
+        "time": 45.71,
+        "text": "We live in glass hours"
+      },
+      {
+        "time": 48.57,
+        "text": "Fragile and bright"
+      },
+      {
+        "time": 51.43,
+        "text": "Hold me before the morning"
+      },
+      {
+        "time": 54.29,
+        "text": "Breaks through the night"
+      },
+      {
+        "time": 57.14,
+        "text": "If the dawn comes knocking"
+      },
+      {
+        "time": 62.86,
+        "text": "Let it wait outside"
+      },
+      {
+        "time": 68.57,
+        "text": "We live in glass hours"
+      },
+      {
+        "time": 71.43,
+        "text": "Fragile and bright"
+      },
+      {
+        "time": 74.29,
+        "text": "Hold me before the morning"
+      },
+      {
+        "time": 77.14,
+        "text": "Breaks through the night"
+      },
+      {
+        "time": 80,
+        "text": "We live in glass hours"
+      },
+      {
+        "time": 82.86,
+        "text": "Fragile and bright"
+      },
+      {
+        "time": 85.71,
+        "text": "Hold me before the morning"
+      },
+      {
+        "time": 88.57,
+        "text": "Breaks through the night"
+      },
+      {
+        "time": 91.43,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Vera Lux"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "neon-umbrella",
+    "language": "en",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 8.57,
+        "text": "Pink umbrella, running down the stairs"
+      },
+      {
+        "time": 12.86,
+        "text": "Thunder laughing, but nobody cares"
+      },
+      {
+        "time": 17.14,
+        "text": "Shoes are soaking, heart is beating loud"
+      },
+      {
+        "time": 21.43,
+        "text": "Dancing like a spark inside the crowd"
+      },
+      {
+        "time": 25.71,
+        "text": "Neon umbrella, spin me around"
+      },
+      {
+        "time": 30,
+        "text": "Light up the rain till it falls without a sound"
+      },
+      {
+        "time": 34.29,
+        "text": "Neon umbrella, don't let me go"
+      },
+      {
+        "time": 38.57,
+        "text": "We're the brightest thing this city knows"
+      },
+      {
+        "time": 42.86,
+        "text": "Taxi headlights paint us gold and blue"
+      },
+      {
+        "time": 47.14,
+        "text": "Every puddle is a mirror made for two"
+      },
+      {
+        "time": 51.43,
+        "text": "Neon umbrella, spin me around"
+      },
+      {
+        "time": 55.71,
+        "text": "Light up the rain till it falls without a sound"
+      },
+      {
+        "time": 60,
+        "text": ""
+      },
+      {
+        "time": 68.57,
+        "text": "Neon umbrella, spin me around"
+      },
+      {
+        "time": 72.86,
+        "text": "Light up the rain till it falls without a sound"
+      },
+      {
+        "time": 77.14,
+        "text": "Neon umbrella, don't let me go"
+      },
+      {
+        "time": 81.43,
+        "text": "We're the brightest thing this city knows"
+      },
+      {
+        "time": 85.71,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Vera Lux"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "tram-28",
+    "language": "en",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 12.63,
+        "text": "Yellow carriage climbing up the hill"
+      },
+      {
+        "time": 15.79,
+        "text": "Sunlight resting on the windowsill"
+      },
+      {
+        "time": 18.95,
+        "text": "Old men reading yesterday's news"
+      },
+      {
+        "time": 22.11,
+        "text": "I've got nowhere I would rather lose"
+      },
+      {
+        "time": 25.26,
+        "text": "Bells are ringing round the narrow bend"
+      },
+      {
+        "time": 28.42,
+        "text": "Every corner feels like an old friend"
+      },
+      {
+        "time": 31.58,
+        "text": "Laundry waving from the balconies"
+      },
+      {
+        "time": 34.74,
+        "text": "Slow as the river, easy as the breeze"
+      },
+      {
+        "time": 37.89,
+        "text": "Ride with me on twenty-eight"
+      },
+      {
+        "time": 41.05,
+        "text": "There's no hurry, no one's late"
+      },
+      {
+        "time": 44.21,
+        "text": "Let the city roll on by"
+      },
+      {
+        "time": 47.37,
+        "text": "Underneath a paper sky"
+      },
+      {
+        "time": 50.53,
+        "text": "Ride with me on twenty-eight"
+      },
+      {
+        "time": 53.68,
+        "text": "There's no hurry, no one's late"
+      },
+      {
+        "time": 56.84,
+        "text": "Let the city roll on by"
+      },
+      {
+        "time": 60,
+        "text": "Underneath a paper sky"
+      },
+      {
+        "time": 63.16,
+        "text": ""
+      },
+      {
+        "time": 75.79,
+        "text": "Ride with me on twenty-eight"
+      },
+      {
+        "time": 78.95,
+        "text": "There's no hurry, no one's late"
+      },
+      {
+        "time": 82.11,
+        "text": "Let the city roll on by"
+      },
+      {
+        "time": 85.26,
+        "text": "Underneath a paper sky"
+      },
+      {
+        "time": 88.42,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Vera Lux"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "paper-moons",
+    "language": "en",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 10.91,
+        "text": "I cut a moon from yesterday's page"
+      },
+      {
+        "time": 13.64,
+        "text": "Hung it up above an empty stage"
+      },
+      {
+        "time": 16.36,
+        "text": "Glitter falling from a ribbon star"
+      },
+      {
+        "time": 19.09,
+        "text": "Shining softly anywhere you are"
+      },
+      {
+        "time": 21.82,
+        "text": "Silver rivers and a cotton cloud"
+      },
+      {
+        "time": 24.55,
+        "text": "Whisper softly or we'll wake the crowd"
+      },
+      {
+        "time": 27.27,
+        "text": "Every shadow is a friendly ghost"
+      },
+      {
+        "time": 30,
+        "text": "Dreaming is the thing I trust the most"
+      },
+      {
+        "time": 32.73,
+        "text": "Paper moons, paper skies"
+      },
+      {
+        "time": 35.45,
+        "text": "Folded wishes in your eyes"
+      },
+      {
+        "time": 38.18,
+        "text": "Even if it's borrowed light"
+      },
+      {
+        "time": 40.91,
+        "text": "Let it glow tonight"
+      },
+      {
+        "time": 43.64,
+        "text": "Paper moons, paper skies"
+      },
+      {
+        "time": 46.36,
+        "text": "Folded wishes in your eyes"
+      },
+      {
+        "time": 49.09,
+        "text": "Even if it's borrowed light"
+      },
+      {
+        "time": 51.82,
+        "text": "Let it glow tonight"
+      },
+      {
+        "time": 54.55,
+        "text": ""
+      },
+      {
+        "time": 65.45,
+        "text": "Paper moons, paper skies"
+      },
+      {
+        "time": 68.18,
+        "text": "Folded wishes in your eyes"
+      },
+      {
+        "time": 70.91,
+        "text": "Even if it's borrowed light"
+      },
+      {
+        "time": 73.64,
+        "text": "Let it glow tonight"
+      },
+      {
+        "time": 76.36,
+        "text": "Paper moons, paper skies"
+      },
+      {
+        "time": 79.09,
+        "text": "Folded wishes in your eyes"
+      },
+      {
+        "time": 81.82,
+        "text": "Even if it's borrowed light"
+      },
+      {
+        "time": 84.55,
+        "text": "Let it glow tonight"
+      },
+      {
+        "time": 87.27,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Vera Lux"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "blue-before-day",
+    "language": "en",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 13.71,
+        "text": "There's a colour just before the light"
+      },
+      {
+        "time": 17.14,
+        "text": "Not quite morning, not quite night"
+      },
+      {
+        "time": 20.57,
+        "text": "I've been sitting with it on my own"
+      },
+      {
+        "time": 24,
+        "text": "Learning how to let you go"
+      },
+      {
+        "time": 27.43,
+        "text": "Coffee cooling on the kitchen chair"
+      },
+      {
+        "time": 30.86,
+        "text": "Your old jacket still hanging there"
+      },
+      {
+        "time": 34.29,
+        "text": "Every bird is singing someone's name"
+      },
+      {
+        "time": 37.71,
+        "text": "None of them will sound the same"
+      },
+      {
+        "time": 41.14,
+        "text": "Blue before day"
+      },
+      {
+        "time": 44.57,
+        "text": "Stay a little while"
+      },
+      {
+        "time": 48,
+        "text": "Blue before day"
+      },
+      {
+        "time": 51.43,
+        "text": "Before I learn to smile"
+      },
+      {
+        "time": 54.86,
+        "text": "Blue before day"
+      },
+      {
+        "time": 58.29,
+        "text": "Stay a little while"
+      },
+      {
+        "time": 61.71,
+        "text": "Blue before day"
+      },
+      {
+        "time": 65.14,
+        "text": "Before I learn to smile"
+      },
+      {
+        "time": 68.57,
+        "text": ""
+      },
+      {
+        "time": 82.29,
+        "text": "Blue before day"
+      },
+      {
+        "time": 85.71,
+        "text": "Stay a little while"
+      },
+      {
+        "time": 89.14,
+        "text": "Blue before day"
+      },
+      {
+        "time": 92.57,
+        "text": "Before I learn to smile"
+      },
+      {
+        "time": 96,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Vera Lux"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "honey-static",
+    "language": "en",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 10.43,
+        "text": "Your voice like honey through the static"
+      },
+      {
+        "time": 13.04,
+        "text": "A station only I can find"
+      },
+      {
+        "time": 15.65,
+        "text": "Turn the dial, the room goes golden"
+      },
+      {
+        "time": 18.26,
+        "text": "Sweet interference on my mind"
+      },
+      {
+        "time": 20.87,
+        "text": "Old receiver humming on the table"
+      },
+      {
+        "time": 23.48,
+        "text": "Lamplight melting into gold"
+      },
+      {
+        "time": 26.09,
+        "text": "Every word you say is half a secret"
+      },
+      {
+        "time": 28.7,
+        "text": "Every secret never told"
+      },
+      {
+        "time": 31.3,
+        "text": "Honey static, stay with me"
+      },
+      {
+        "time": 33.91,
+        "text": "Crackle soft and warm"
+      },
+      {
+        "time": 36.52,
+        "text": "Even when the signal's weak"
+      },
+      {
+        "time": 39.13,
+        "text": "You still keep me from the storm"
+      },
+      {
+        "time": 41.74,
+        "text": "Honey static, stay with me"
+      },
+      {
+        "time": 44.35,
+        "text": "Crackle soft and warm"
+      },
+      {
+        "time": 46.96,
+        "text": "Even when the signal's weak"
+      },
+      {
+        "time": 49.57,
+        "text": "You still keep me from the storm"
+      },
+      {
+        "time": 52.17,
+        "text": ""
+      },
+      {
+        "time": 62.61,
+        "text": "Honey static, stay with me"
+      },
+      {
+        "time": 65.22,
+        "text": "Crackle soft and warm"
+      },
+      {
+        "time": 67.83,
+        "text": "Even when the signal's weak"
+      },
+      {
+        "time": 70.43,
+        "text": "You still keep me from the storm"
+      },
+      {
+        "time": 73.04,
+        "text": "Honey static, stay with me"
+      },
+      {
+        "time": 75.65,
+        "text": "Crackle soft and warm"
+      },
+      {
+        "time": 78.26,
+        "text": "Even when the signal's weak"
+      },
+      {
+        "time": 80.87,
+        "text": "You still keep me from the storm"
+      },
+      {
+        "time": 83.48,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Vera Lux"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "last-train-home",
+    "language": "en",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 12,
+        "text": "Platform lights are fading one by one"
+      },
+      {
+        "time": 15,
+        "text": "The last guitar has packed away its song"
+      },
+      {
+        "time": 18,
+        "text": "I've got a ticket and a tired heart"
+      },
+      {
+        "time": 21,
+        "text": "And half a city keeping us apart"
+      },
+      {
+        "time": 24,
+        "text": "Window seat, my reflection in the dark"
+      },
+      {
+        "time": 27,
+        "text": "Passing stations like an unlit spark"
+      },
+      {
+        "time": 30,
+        "text": "Somebody's laughing two carriages down"
+      },
+      {
+        "time": 33,
+        "text": "I close my eyes and listen for the sound"
+      },
+      {
+        "time": 36,
+        "text": "Last train home"
+      },
+      {
+        "time": 39,
+        "text": "Carry me slow"
+      },
+      {
+        "time": 42,
+        "text": "Through the sleeping towns"
+      },
+      {
+        "time": 45,
+        "text": "Where the river glows"
+      },
+      {
+        "time": 48,
+        "text": "Last train home"
+      },
+      {
+        "time": 51,
+        "text": "Carry me slow"
+      },
+      {
+        "time": 54,
+        "text": "Through the sleeping towns"
+      },
+      {
+        "time": 57,
+        "text": "Where the river glows"
+      },
+      {
+        "time": 60,
+        "text": "Wake me when we're near"
+      },
+      {
+        "time": 66,
+        "text": "Wake me when you're here"
+      },
+      {
+        "time": 72,
+        "text": "Last train home"
+      },
+      {
+        "time": 75,
+        "text": "Carry me slow"
+      },
+      {
+        "time": 78,
+        "text": "Through the sleeping towns"
+      },
+      {
+        "time": 81,
+        "text": "Where the river glows"
+      },
+      {
+        "time": 84,
+        "text": "Last train home"
+      },
+      {
+        "time": 87,
+        "text": "Carry me slow"
+      },
+      {
+        "time": 90,
+        "text": "Through the sleeping towns"
+      },
+      {
+        "time": 93,
+        "text": "Where the river glows"
+      },
+      {
+        "time": 96,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Vera Lux"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "mua-pho-cu",
+    "language": "vi",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 12.97,
+        "text": "Mưa rơi trên mái ngói rêu phong"
+      },
+      {
+        "time": 16.22,
+        "text": "Phố cũ im lìm giữa chiều đông"
+      },
+      {
+        "time": 19.46,
+        "text": "Tách trà nguội dần bên ô cửa"
+      },
+      {
+        "time": 22.7,
+        "text": "Nghe lòng mình khẽ gọi tên ai"
+      },
+      {
+        "time": 25.95,
+        "text": "Hàng sấu lặng thầm ướt vai áo"
+      },
+      {
+        "time": 29.19,
+        "text": "Chuông xe đạp vọng cuối con đường"
+      },
+      {
+        "time": 32.43,
+        "text": "Ta đi qua nhau như hai vệt nước"
+      },
+      {
+        "time": 35.68,
+        "text": "Loang trên kính rồi tan vào sương"
+      },
+      {
+        "time": 38.92,
+        "text": "Mưa phố cũ, mưa phố cũ"
+      },
+      {
+        "time": 42.16,
+        "text": "Rơi cho ai những câu chưa nói"
+      },
+      {
+        "time": 45.41,
+        "text": "Mưa phố cũ, mưa phố cũ"
+      },
+      {
+        "time": 48.65,
+        "text": "Giữ giùm tôi một chút bồi hồi"
+      },
+      {
+        "time": 51.89,
+        "text": "Mưa phố cũ, mưa phố cũ"
+      },
+      {
+        "time": 55.14,
+        "text": "Rơi cho ai những câu chưa nói"
+      },
+      {
+        "time": 58.38,
+        "text": "Mưa phố cũ, mưa phố cũ"
+      },
+      {
+        "time": 61.62,
+        "text": "Giữ giùm tôi một chút bồi hồi"
+      },
+      {
+        "time": 64.86,
+        "text": ""
+      },
+      {
+        "time": 77.84,
+        "text": "Mưa phố cũ, mưa phố cũ"
+      },
+      {
+        "time": 81.08,
+        "text": "Rơi cho ai những câu chưa nói"
+      },
+      {
+        "time": 84.32,
+        "text": "Mưa phố cũ, mưa phố cũ"
+      },
+      {
+        "time": 87.57,
+        "text": "Giữ giùm tôi một chút bồi hồi"
+      },
+      {
+        "time": 90.81,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Lam Phong"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "ca-phe-sang",
+    "language": "vi",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 11.43,
+        "text": "Sáng nay nắng khẽ đậu bên hiên"
+      },
+      {
+        "time": 14.29,
+        "text": "Phin cà phê nhỏ giọt bình yên"
+      },
+      {
+        "time": 17.14,
+        "text": "Tiếng rao xa xa ngoài ngõ nhỏ"
+      },
+      {
+        "time": 20,
+        "text": "Một ngày mới bắt đầu thật hiền"
+      },
+      {
+        "time": 22.86,
+        "text": "Ly cà phê đen thêm chút đường"
+      },
+      {
+        "time": 25.71,
+        "text": "Bánh mì nóng giòn thơm cả phường"
+      },
+      {
+        "time": 28.57,
+        "text": "Chẳng cần vội vã đi đâu cả"
+      },
+      {
+        "time": 31.43,
+        "text": "Cứ để thời gian trôi dịu dàng"
+      },
+      {
+        "time": 34.29,
+        "text": "Cà phê sáng, ngồi bên nhau"
+      },
+      {
+        "time": 37.14,
+        "text": "Kể chuyện hôm qua chẳng cần lâu"
+      },
+      {
+        "time": 40,
+        "text": "Cà phê sáng, nắng vàng ươm"
+      },
+      {
+        "time": 42.86,
+        "text": "Lòng nhẹ như mây trên phố phường"
+      },
+      {
+        "time": 45.71,
+        "text": "Cà phê sáng, ngồi bên nhau"
+      },
+      {
+        "time": 48.57,
+        "text": "Kể chuyện hôm qua chẳng cần lâu"
+      },
+      {
+        "time": 51.43,
+        "text": "Cà phê sáng, nắng vàng ươm"
+      },
+      {
+        "time": 54.29,
+        "text": "Lòng nhẹ như mây trên phố phường"
+      },
+      {
+        "time": 57.14,
+        "text": ""
+      },
+      {
+        "time": 68.57,
+        "text": "Cà phê sáng, ngồi bên nhau"
+      },
+      {
+        "time": 71.43,
+        "text": "Kể chuyện hôm qua chẳng cần lâu"
+      },
+      {
+        "time": 74.29,
+        "text": "Cà phê sáng, nắng vàng ươm"
+      },
+      {
+        "time": 77.14,
+        "text": "Lòng nhẹ như mây trên phố phường"
+      },
+      {
+        "time": 80,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Lam Phong"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "ho-guom-5am",
+    "language": "vi",
+    "synced": false,
+    "instrumental": true,
+    "lines": [],
+    "writers": [
+      "Lam Phong"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "gac-mai",
+    "language": "vi",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 12.31,
+        "text": "Gác mái nhỏ chênh vênh trên phố"
+      },
+      {
+        "time": 15.38,
+        "text": "Đèn vàng soi những trang thư cũ"
+      },
+      {
+        "time": 18.46,
+        "text": "Thành phố ngủ, chỉ còn tiếng gió"
+      },
+      {
+        "time": 21.54,
+        "text": "Và đôi ta thức cùng ánh trăng"
+      },
+      {
+        "time": 24.62,
+        "text": "Mái tôn khẽ hát lời mưa đêm"
+      },
+      {
+        "time": 27.69,
+        "text": "Chăn len ấm, tiếng đàn êm đềm"
+      },
+      {
+        "time": 30.77,
+        "text": "Ngoài kia xa những ô cửa tắt"
+      },
+      {
+        "time": 33.85,
+        "text": "Chỉ còn ta với những ước mơ"
+      },
+      {
+        "time": 36.92,
+        "text": "Trên gác mái, ta đếm sao"
+      },
+      {
+        "time": 40,
+        "text": "Gửi theo gió những lời thì thào"
+      },
+      {
+        "time": 43.08,
+        "text": "Trên gác mái, đêm thật dài"
+      },
+      {
+        "time": 46.15,
+        "text": "Mình cứ thức, chẳng cần ngày mai"
+      },
+      {
+        "time": 49.23,
+        "text": "Trên gác mái, ta đếm sao"
+      },
+      {
+        "time": 52.31,
+        "text": "Gửi theo gió những lời thì thào"
+      },
+      {
+        "time": 55.38,
+        "text": "Trên gác mái, đêm thật dài"
+      },
+      {
+        "time": 58.46,
+        "text": "Mình cứ thức, chẳng cần ngày mai"
+      },
+      {
+        "time": 61.54,
+        "text": ""
+      },
+      {
+        "time": 73.85,
+        "text": "Trên gác mái, ta đếm sao"
+      },
+      {
+        "time": 76.92,
+        "text": "Gửi theo gió những lời thì thào"
+      },
+      {
+        "time": 80,
+        "text": "Trên gác mái, đêm thật dài"
+      },
+      {
+        "time": 83.08,
+        "text": "Mình cứ thức, chẳng cần ngày mai"
+      },
+      {
+        "time": 86.15,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Lam Phong"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "midnight-arcade",
+    "language": "en",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 8.89,
+        "text": "Coin in the slot and the screen comes alive"
+      },
+      {
+        "time": 13.33,
+        "text": "Pixel horizon, we're ready to drive"
+      },
+      {
+        "time": 17.78,
+        "text": "High score glowing in electric blue"
+      },
+      {
+        "time": 22.22,
+        "text": "Player two, I was waiting for you"
+      },
+      {
+        "time": 26.67,
+        "text": "Midnight arcade, lights in our eyes"
+      },
+      {
+        "time": 31.11,
+        "text": "Racing the dark till the morning arrives"
+      },
+      {
+        "time": 35.56,
+        "text": "Midnight arcade, never game over"
+      },
+      {
+        "time": 40,
+        "text": "One more level, come a little closer"
+      },
+      {
+        "time": 44.44,
+        "text": "Joystick shaking and the music is loud"
+      },
+      {
+        "time": 48.89,
+        "text": "We're the heroes of a digital crowd"
+      },
+      {
+        "time": 53.33,
+        "text": "Midnight arcade, lights in our eyes"
+      },
+      {
+        "time": 57.78,
+        "text": "Racing the dark till the morning arrives"
+      },
+      {
+        "time": 62.22,
+        "text": ""
+      },
+      {
+        "time": 71.11,
+        "text": "Midnight arcade, lights in our eyes"
+      },
+      {
+        "time": 75.56,
+        "text": "Racing the dark till the morning arrives"
+      },
+      {
+        "time": 80,
+        "text": "Midnight arcade, never game over"
+      },
+      {
+        "time": 84.44,
+        "text": "One more level, come a little closer"
+      },
+      {
+        "time": 88.89,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Neon Koi"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "chrome-hearts",
+    "language": "en",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 9.8,
+        "text": "Streetlights humming on the overpass"
+      },
+      {
+        "time": 12.24,
+        "text": "Your reflection on the window glass"
+      },
+      {
+        "time": 14.69,
+        "text": "Engines purring like a lullaby"
+      },
+      {
+        "time": 17.14,
+        "text": "Chrome and starlight in your eyes"
+      },
+      {
+        "time": 19.59,
+        "text": "Radio static and a midnight call"
+      },
+      {
+        "time": 22.04,
+        "text": "Tunnel lights are dancing on the wall"
+      },
+      {
+        "time": 24.49,
+        "text": "Nothing's real except the road ahead"
+      },
+      {
+        "time": 26.94,
+        "text": "And every word you never said"
+      },
+      {
+        "time": 29.39,
+        "text": "Chrome hearts, beating in the dark"
+      },
+      {
+        "time": 31.84,
+        "text": "Cold outside but warm inside the spark"
+      },
+      {
+        "time": 34.29,
+        "text": "Chrome hearts, made to shine"
+      },
+      {
+        "time": 36.73,
+        "text": "Drive with me till the end of the line"
+      },
+      {
+        "time": 39.18,
+        "text": "Chrome hearts, beating in the dark"
+      },
+      {
+        "time": 41.63,
+        "text": "Cold outside but warm inside the spark"
+      },
+      {
+        "time": 44.08,
+        "text": "Chrome hearts, made to shine"
+      },
+      {
+        "time": 46.53,
+        "text": "Drive with me till the end of the line"
+      },
+      {
+        "time": 48.98,
+        "text": "Streetlights humming on the overpass"
+      },
+      {
+        "time": 51.43,
+        "text": "Your reflection on the window glass"
+      },
+      {
+        "time": 53.88,
+        "text": "Engines purring like a lullaby"
+      },
+      {
+        "time": 56.33,
+        "text": "Chrome and starlight in your eyes"
+      },
+      {
+        "time": 58.78,
+        "text": ""
+      },
+      {
+        "time": 68.57,
+        "text": "Chrome hearts, beating in the dark"
+      },
+      {
+        "time": 71.02,
+        "text": "Cold outside but warm inside the spark"
+      },
+      {
+        "time": 73.47,
+        "text": "Chrome hearts, made to shine"
+      },
+      {
+        "time": 75.92,
+        "text": "Drive with me till the end of the line"
+      },
+      {
+        "time": 78.37,
+        "text": "Chrome hearts, beating in the dark"
+      },
+      {
+        "time": 80.82,
+        "text": "Cold outside but warm inside the spark"
+      },
+      {
+        "time": 83.27,
+        "text": "Chrome hearts, made to shine"
+      },
+      {
+        "time": 85.71,
+        "text": "Drive with me till the end of the line"
+      },
+      {
+        "time": 88.16,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Neon Koi"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "overdrive",
+    "language": "en",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 8.14,
+        "text": "Feel the bass line pulling at the floor"
+      },
+      {
+        "time": 12.2,
+        "text": "Heartbeat racing, can you take some more"
+      },
+      {
+        "time": 16.27,
+        "text": "Lights are flashing like a falling star"
+      },
+      {
+        "time": 20.34,
+        "text": "Push it faster, show me who you are"
+      },
+      {
+        "time": 24.41,
+        "text": "Overdrive, overdrive"
+      },
+      {
+        "time": 28.47,
+        "text": "Turn it up and come alive"
+      },
+      {
+        "time": 32.54,
+        "text": "Overdrive, overdrive"
+      },
+      {
+        "time": 36.61,
+        "text": "We're the night, we're the ride"
+      },
+      {
+        "time": 40.68,
+        "text": "Feel the bass line pulling at the floor"
+      },
+      {
+        "time": 44.75,
+        "text": "Heartbeat racing, can you take some more"
+      },
+      {
+        "time": 48.81,
+        "text": "Overdrive, overdrive"
+      },
+      {
+        "time": 52.88,
+        "text": "Turn it up and come alive"
+      },
+      {
+        "time": 56.95,
+        "text": ""
+      },
+      {
+        "time": 65.08,
+        "text": "Overdrive, overdrive"
+      },
+      {
+        "time": 69.15,
+        "text": "Turn it up and come alive"
+      },
+      {
+        "time": 73.22,
+        "text": "Overdrive, overdrive"
+      },
+      {
+        "time": 77.29,
+        "text": "We're the night, we're the ride"
+      },
+      {
+        "time": 81.36,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Neon Koi"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "pixel-rain",
+    "language": "en",
+    "synced": false,
+    "instrumental": true,
+    "lines": [],
+    "writers": [
+      "Neon Koi"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "velvet-sunday",
+    "language": "vi",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 11.71,
+        "text": "Chủ nhật trôi chậm như nhung"
+      },
+      {
+        "time": 14.63,
+        "text": "Rèm cửa bay, nắng vương mái tóc"
+      },
+      {
+        "time": 17.56,
+        "text": "Đĩa than cũ hát bài ta thích"
+      },
+      {
+        "time": 20.49,
+        "text": "Em chẳng muốn đi đâu hết"
+      },
+      {
+        "time": 23.41,
+        "text": "Trà gừng ấm trong tay đôi mình"
+      },
+      {
+        "time": 26.34,
+        "text": "Sách mở dở trang còn đang đọc"
+      },
+      {
+        "time": 29.27,
+        "text": "Thành phố ngoài kia cứ vội vã"
+      },
+      {
+        "time": 32.2,
+        "text": "Còn ta ở lại với giai điệu"
+      },
+      {
+        "time": 35.12,
+        "text": "Velvet Sunday, ở lại đây"
+      },
+      {
+        "time": 38.05,
+        "text": "Ôm nhau giữa những phút giây này"
+      },
+      {
+        "time": 40.98,
+        "text": "Velvet Sunday, chẳng cần lo"
+      },
+      {
+        "time": 43.9,
+        "text": "Mọi điều khác cứ để ngày mai"
+      },
+      {
+        "time": 46.83,
+        "text": "Velvet Sunday, ở lại đây"
+      },
+      {
+        "time": 49.76,
+        "text": "Ôm nhau giữa những phút giây này"
+      },
+      {
+        "time": 52.68,
+        "text": "Velvet Sunday, chẳng cần lo"
+      },
+      {
+        "time": 55.61,
+        "text": "Mọi điều khác cứ để ngày mai"
+      },
+      {
+        "time": 58.54,
+        "text": ""
+      },
+      {
+        "time": 70.24,
+        "text": "Velvet Sunday, ở lại đây"
+      },
+      {
+        "time": 73.17,
+        "text": "Ôm nhau giữa những phút giây này"
+      },
+      {
+        "time": 76.1,
+        "text": "Velvet Sunday, chẳng cần lo"
+      },
+      {
+        "time": 79.02,
+        "text": "Mọi điều khác cứ để ngày mai"
+      },
+      {
+        "time": 81.95,
+        "text": "Velvet Sunday, ở lại đây"
+      },
+      {
+        "time": 84.88,
+        "text": "Ôm nhau giữa những phút giây này"
+      },
+      {
+        "time": 87.8,
+        "text": "Velvet Sunday, chẳng cần lo"
+      },
+      {
+        "time": 90.73,
+        "text": "Mọi điều khác cứ để ngày mai"
+      },
+      {
+        "time": 93.66,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Mira Sol"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "slow-bloom",
+    "language": "vi",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 12.97,
+        "text": "Có những đoá hoa nở muộn màng"
+      },
+      {
+        "time": 16.22,
+        "text": "Chẳng vội đâu, cứ thong thả sang"
+      },
+      {
+        "time": 19.46,
+        "text": "Như tình mình lớn lên từng chút"
+      },
+      {
+        "time": 22.7,
+        "text": "Trong nắng chiều dịu dàng"
+      },
+      {
+        "time": 25.95,
+        "text": "Mưa có rơi, gió có về"
+      },
+      {
+        "time": 29.19,
+        "text": "Rễ vẫn bám sâu dưới bờ đê"
+      },
+      {
+        "time": 32.43,
+        "text": "Một ngày kia khi em nhìn lại"
+      },
+      {
+        "time": 35.68,
+        "text": "Cả khu vườn đã xanh"
+      },
+      {
+        "time": 38.92,
+        "text": "Nở chậm thôi, nở chậm thôi"
+      },
+      {
+        "time": 42.16,
+        "text": "Từng cánh hoa mở ra trong đời"
+      },
+      {
+        "time": 45.41,
+        "text": "Nở chậm thôi, đừng vội vàng"
+      },
+      {
+        "time": 48.65,
+        "text": "Vì yêu thương cần thời gian"
+      },
+      {
+        "time": 51.89,
+        "text": "Nở chậm thôi, nở chậm thôi"
+      },
+      {
+        "time": 55.14,
+        "text": "Từng cánh hoa mở ra trong đời"
+      },
+      {
+        "time": 58.38,
+        "text": "Nở chậm thôi, đừng vội vàng"
+      },
+      {
+        "time": 61.62,
+        "text": "Vì yêu thương cần thời gian"
+      },
+      {
+        "time": 64.86,
+        "text": ""
+      },
+      {
+        "time": 77.84,
+        "text": "Nở chậm thôi, nở chậm thôi"
+      },
+      {
+        "time": 81.08,
+        "text": "Từng cánh hoa mở ra trong đời"
+      },
+      {
+        "time": 84.32,
+        "text": "Nở chậm thôi, đừng vội vàng"
+      },
+      {
+        "time": 87.57,
+        "text": "Vì yêu thương cần thời gian"
+      },
+      {
+        "time": 90.81,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Mira Sol"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "golden-hour",
+    "language": "vi",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 10.67,
+        "text": "Sài Gòn năm giờ chiều"
+      },
+      {
+        "time": 13.33,
+        "text": "Nắng vàng rót lên vai áo"
+      },
+      {
+        "time": 16,
+        "text": "Xe qua cầu, gió mang hương sông"
+      },
+      {
+        "time": 18.67,
+        "text": "Ta cười như chưa từng biết buồn"
+      },
+      {
+        "time": 21.33,
+        "text": "Ly đá chanh trên vỉa hè"
+      },
+      {
+        "time": 24,
+        "text": "Tiếng ai ngân nga câu hát nhỏ"
+      },
+      {
+        "time": 26.67,
+        "text": "Một ngày dài rồi cũng qua"
+      },
+      {
+        "time": 29.33,
+        "text": "Chỉ cần có nhau là đủ"
+      },
+      {
+        "time": 32,
+        "text": "Giờ vàng ơi, xin chậm lại"
+      },
+      {
+        "time": 34.67,
+        "text": "Cho ta giữ ánh mắt ai"
+      },
+      {
+        "time": 37.33,
+        "text": "Giờ vàng ơi, đừng tắt vội"
+      },
+      {
+        "time": 40,
+        "text": "Để tim này còn mãi đầy"
+      },
+      {
+        "time": 42.67,
+        "text": "Giờ vàng ơi, xin chậm lại"
+      },
+      {
+        "time": 45.33,
+        "text": "Cho ta giữ ánh mắt ai"
+      },
+      {
+        "time": 48,
+        "text": "Giờ vàng ơi, đừng tắt vội"
+      },
+      {
+        "time": 50.67,
+        "text": "Để tim này còn mãi đầy"
+      },
+      {
+        "time": 53.33,
+        "text": ""
+      },
+      {
+        "time": 64,
+        "text": "Giờ vàng ơi, xin chậm lại"
+      },
+      {
+        "time": 66.67,
+        "text": "Cho ta giữ ánh mắt ai"
+      },
+      {
+        "time": 69.33,
+        "text": "Giờ vàng ơi, đừng tắt vội"
+      },
+      {
+        "time": 72,
+        "text": "Để tim này còn mãi đầy"
+      },
+      {
+        "time": 74.67,
+        "text": "Giờ vàng ơi, xin chậm lại"
+      },
+      {
+        "time": 77.33,
+        "text": "Cho ta giữ ánh mắt ai"
+      },
+      {
+        "time": 80,
+        "text": "Giờ vàng ơi, đừng tắt vội"
+      },
+      {
+        "time": 82.67,
+        "text": "Để tim này còn mãi đầy"
+      },
+      {
+        "time": 85.33,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Mira Sol"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "northern-drift",
+    "language": "en",
+    "synced": false,
+    "instrumental": true,
+    "lines": [],
+    "writers": [
+      "Ocean Atlas"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "glacier-light",
+    "language": "en",
+    "synced": false,
+    "instrumental": true,
+    "lines": [],
+    "writers": [
+      "Ocean Atlas"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "low-tide",
+    "language": "en",
+    "synced": false,
+    "instrumental": true,
+    "lines": [],
+    "writers": [
+      "Ocean Atlas"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "songId": "afterglow",
+    "language": "en",
+    "synced": true,
+    "instrumental": false,
+    "lines": [
+      {
+        "time": 0,
+        "text": ""
+      },
+      {
+        "time": 10,
+        "text": "Sun goes down in a slow parade"
+      },
+      {
+        "time": 12.5,
+        "text": "Painting gold on the things we made"
+      },
+      {
+        "time": 15,
+        "text": "You and me on the harbour wall"
+      },
+      {
+        "time": 17.5,
+        "text": "Watching evening begin to fall"
+      },
+      {
+        "time": 20,
+        "text": "Seagulls drawing circles in the air"
+      },
+      {
+        "time": 22.5,
+        "text": "Salt and summer tangled in your hair"
+      },
+      {
+        "time": 25,
+        "text": "Every colour softer than before"
+      },
+      {
+        "time": 27.5,
+        "text": "Waves keep asking, we keep wanting more"
+      },
+      {
+        "time": 30,
+        "text": "In the afterglow"
+      },
+      {
+        "time": 32.5,
+        "text": "Everything feels slow"
+      },
+      {
+        "time": 35,
+        "text": "Hold on to the light"
+      },
+      {
+        "time": 37.5,
+        "text": "Just a little more tonight"
+      },
+      {
+        "time": 40,
+        "text": "In the afterglow"
+      },
+      {
+        "time": 42.5,
+        "text": "Everything feels slow"
+      },
+      {
+        "time": 45,
+        "text": "Hold on to the light"
+      },
+      {
+        "time": 47.5,
+        "text": "Just a little more tonight"
+      },
+      {
+        "time": 50,
+        "text": "Sun goes down in a slow parade"
+      },
+      {
+        "time": 52.5,
+        "text": "Painting gold on the things we made"
+      },
+      {
+        "time": 55,
+        "text": "You and me on the harbour wall"
+      },
+      {
+        "time": 57.5,
+        "text": "Watching evening begin to fall"
+      },
+      {
+        "time": 60,
+        "text": ""
+      },
+      {
+        "time": 70,
+        "text": "In the afterglow"
+      },
+      {
+        "time": 72.5,
+        "text": "Everything feels slow"
+      },
+      {
+        "time": 75,
+        "text": "Hold on to the light"
+      },
+      {
+        "time": 77.5,
+        "text": "Just a little more tonight"
+      },
+      {
+        "time": 80,
+        "text": "In the afterglow"
+      },
+      {
+        "time": 82.5,
+        "text": "Everything feels slow"
+      },
+      {
+        "time": 85,
+        "text": "Hold on to the light"
+      },
+      {
+        "time": 87.5,
+        "text": "Just a little more tonight"
+      },
+      {
+        "time": 90,
+        "text": ""
+      }
+    ],
+    "writers": [
+      "Vera Lux"
+    ],
+    "updatedAt": "2026-10-01T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "dream-pop",
+    "name": "Dream Pop",
+    "color": "#f28cc0",
+    "description": "Synth mềm, reverb dày và giai điệu bồng bềnh.",
+    "sortOrder": 0,
+    "coverPath": "covers/genres/dream-pop.jpg"
+  },
+  {
+    "id": "lofi",
+    "name": "Lo-fi",
+    "color": "#e9b07a",
+    "description": "Nhịp trống lười biếng, tiếng đĩa than và hợp âm jazz.",
+    "sortOrder": 1,
+    "coverPath": "covers/genres/lofi.jpg"
+  },
+  {
+    "id": "synthwave",
+    "name": "Synthwave",
+    "color": "#ff5fa2",
+    "description": "Âm thanh thập niên 80, đèn neon và những chuyến xe đêm.",
+    "sortOrder": 2,
+    "coverPath": "covers/genres/synthwave.jpg"
+  },
+  {
+    "id": "neo-soul",
+    "name": "Neo Soul",
+    "color": "#f5a48a",
+    "description": "Hợp âm ấm, groove thả lỏng và cảm xúc mộc mạc.",
+    "sortOrder": 3,
+    "coverPath": "covers/genres/neo-soul.jpg"
+  },
+  {
+    "id": "ambient",
+    "name": "Ambient",
+    "color": "#6fc3df",
+    "description": "Không gian rộng, âm thanh trôi chậm như mặt biển.",
+    "sortOrder": 4,
+    "coverPath": "covers/genres/ambient.jpg"
+  }
+]

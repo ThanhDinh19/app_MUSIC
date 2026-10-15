@@ -1,0 +1,74 @@
+[
+  {
+    "id": "glass-hours",
+    "title": "Glass Hours",
+    "type": "album",
+    "artistId": "vera-lux",
+    "releaseDate": "2026-03-13",
+    "genreId": "dream-pop",
+    "moodId": "late-night",
+    "description": "Bảy bài hát về những thành phố ướt mưa, ánh đèn neon nhòe trên kính và chuyến tàu cuối cùng về nhà.",
+    "coverPath": "covers/albums/glass-hours.jpg",
+    "createdAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "mua-pho-cu",
+    "title": "Mưa Phố Cũ",
+    "type": "album",
+    "artistId": "lam-phong",
+    "releaseDate": "2025-11-20",
+    "genreId": "lofi",
+    "moodId": "calm",
+    "description": "Bốn bản lo-fi cho những ngày Hà Nội mưa phùn — nghe khi pha cà phê, đọc sách hay chỉ ngồi nhìn mái nhà.",
+    "coverPath": "covers/albums/mua-pho-cu.jpg",
+    "createdAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "midnight-arcade",
+    "title": "Midnight Arcade",
+    "type": "album",
+    "artistId": "neon-koi",
+    "releaseDate": "2026-06-05",
+    "genreId": "synthwave",
+    "moodId": "energised",
+    "description": "Đèn neon, đường cao tốc vắng và những trò chơi điện tử lúc nửa đêm.",
+    "coverPath": "covers/albums/midnight-arcade.jpg",
+    "createdAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "velvet-sunday",
+    "title": "Velvet Sunday",
+    "type": "album",
+    "artistId": "mira-sol",
+    "releaseDate": "2026-08-22",
+    "genreId": "neo-soul",
+    "moodId": "soulful",
+    "description": "Ánh nắng chiều xuyên qua rèm cửa, một tách trà và những hợp âm chẳng vội vàng.",
+    "coverPath": "covers/albums/velvet-sunday.jpg",
+    "createdAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "tidal-atlas",
+    "title": "Tidal Atlas",
+    "type": "ep",
+    "artistId": "ocean-atlas",
+    "releaseDate": "2025-09-01",
+    "genreId": "ambient",
+    "moodId": "calm",
+    "description": "Ba bản ambient được ghi lại trong những đêm dài ở biển Bắc.",
+    "coverPath": "covers/albums/tidal-atlas.jpg",
+    "createdAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "afterglow",
+    "title": "Afterglow",
+    "type": "single",
+    "artistId": "vera-lux",
+    "releaseDate": "2026-09-26",
+    "genreId": "dream-pop",
+    "moodId": "dreamy",
+    "description": "Đĩa đơn mới nhất của Vera Lux — khoảnh khắc ánh hoàng hôn còn vương lại trên mặt nước.",
+    "coverPath": "covers/albums/afterglow.jpg",
+    "createdAt": "2026-10-01T00:00:00.000Z"
+  }
+]

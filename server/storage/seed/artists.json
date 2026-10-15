@@ -1,0 +1,62 @@
+[
+  {
+    "id": "vera-lux",
+    "name": "Vera Lux",
+    "location": "Lisbon, Bồ Đào Nha",
+    "bio": "Dream-pop từ Lisbon. Synth mềm, phố mưa và những bài hát được viết trong khoảng từ 2 đến 5 giờ sáng.",
+    "genreIds": [
+      "dream-pop"
+    ],
+    "monthlyListeners": 1284000,
+    "imagePath": "artists/vera-lux.jpg",
+    "createdAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "lam-phong",
+    "name": "Lam Phong",
+    "location": "Hà Nội, Việt Nam",
+    "bio": "Producer lo-fi người Hà Nội. Nhạc của Phong là tiếng mưa trên mái tôn, cà phê sáng và những con phố cũ.",
+    "genreIds": [
+      "lofi"
+    ],
+    "monthlyListeners": 642000,
+    "imagePath": "artists/lam-phong.jpg",
+    "createdAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "neon-koi",
+    "name": "Neon Koi",
+    "location": "Tokyo, Nhật Bản",
+    "bio": "Bộ đôi synthwave mang âm thanh thập niên 80 vào những chuyến xe đêm xuyên qua thành phố đèn neon.",
+    "genreIds": [
+      "synthwave"
+    ],
+    "monthlyListeners": 932000,
+    "imagePath": "artists/neon-koi.jpg",
+    "createdAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "mira-sol",
+    "name": "Mira Sol",
+    "location": "Sài Gòn, Việt Nam",
+    "bio": "Giọng neo-soul ấm áp với những hợp âm jazz mộc và nhịp trống thả lỏng của buổi chiều Chủ nhật.",
+    "genreIds": [
+      "neo-soul"
+    ],
+    "monthlyListeners": 418000,
+    "imagePath": "artists/mira-sol.jpg",
+    "createdAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "ocean-atlas",
+    "name": "Ocean Atlas",
+    "location": "Reykjavík, Iceland",
+    "bio": "Dự án ambient lấy cảm hứng từ biển Bắc, băng tuyết và ánh cực quang.",
+    "genreIds": [
+      "ambient"
+    ],
+    "monthlyListeners": 276000,
+    "imagePath": "artists/ocean-atlas.jpg",
+    "createdAt": "2026-10-01T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "name": "@nocturne/server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --clear-screen=false src/index.ts",
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node22 --format=esm --packages=external --sourcemap --outfile=dist/index.js",
+    "start": "node --enable-source-maps dist/index.js",
+    "typecheck": "tsc --noEmit -p .",
+    "data:reset": "node -e \"require('fs').rmSync('storage/data',{recursive:true,force:true});console.log('Đã xoá storage/data — dữ liệu sẽ được nạp lại từ storage/seed khi khởi động.')\""
+  },
+  "dependencies": {
+    "@nocturne/shared": "*",
+    "compression": "^1.8.2",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "jose": "^6.2.12",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.8.1",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.15"
+  }
+}
