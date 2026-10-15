@@ -10,8 +10,13 @@ export type { OtpSender } from './otp-sender';
 /** Chọn kênh gửi mã theo OTP_PROVIDER. Trả về null nếu cấu hình Zalo chưa đủ (tắt đăng nhập Zalo). */
 export function createOtpSender(config: AppConfig): OtpSender | null {
   if (config.auth.otpProvider === 'console') {
+    if (config.isProduction && !config.auth.otpShowCode) {
+      // Không gửi được mã thật và cũng không hiện mã → người dùng không thể đăng nhập → tắt hẳn.
+      console.warn('⚠️  Đăng nhập Zalo đang tắt: production cần OTP_PROVIDER=zalo (hoặc OTP_SHOW_CODE=true cho bản demo).');
+      return null;
+    }
     if (config.isProduction) {
-      console.warn('⚠️  OTP_PROVIDER=console ở production: mã OTP chỉ được in ra log server, người dùng sẽ không nhận được.');
+      console.warn('⚠️  OTP_SHOW_CODE=true: mã OTP hiện ngay trên màn hình — CHỈ dùng cho bản demo.');
     }
     return new ConsoleOtpSender();
   }

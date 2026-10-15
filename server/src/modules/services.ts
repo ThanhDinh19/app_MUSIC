@@ -34,7 +34,8 @@ export function createServices(repos: Repositories, config: AppConfig): Services
   const playlists = new PlaylistService(repos, mapper);
   const users = new UserService(repos);
   const google = new GoogleVerifier(config.auth.googleClientId, config.auth.googleJwksUrl);
-  const otp = new OtpService(repos, createOtpSender(config), config.auth.secret, !config.isProduction);
+  const exposeDevCode = !config.isProduction || config.auth.otpShowCode;
+  const otp = new OtpService(repos, createOtpSender(config), config.auth.secret, exposeDevCode);
   return {
     users,
     auth: new AuthService(repos, users, google, otp, config.auth.sessionTtlMs),

@@ -31,6 +31,129 @@ npm run build
 npm start            # http://localhost:4000
 ```
 
+## Triển khai lên server (ví dụ 34.92.57.155)
+
+Chạy bằng **Docker Compose**: container `app` (Nocturne) + `caddy` (reverse proxy, tự xin & gia hạn **HTTPS** miễn phí).
+HTTPS là bắt buộc để cài PWA, chạy service worker và đăng nhập Google.
+
+**1. Chuẩn bị server** (Debian/Ubuntu, nên có ≥ 2 GB RAM)
+
+- Mở cổng **80** và **443**: trên Google Cloud vào VM → *Edit* → tích *Allow HTTP traffic* và *Allow HTTPS traffic*.
+- Tên miền: tạo bản ghi **A** trỏ về `34.92.57.155`. Chưa có tên miền thì tạm dùng `34-92-57-155.sslip.io` (tự trỏ về IP, miễn phí) —
+  lưu ý Google có thể không chấp nhận tên miền dạng này cho đăng nhập Google, khi đó cần tên miền thật.
+- SSH vào server rồi cài Docker:
+
+  ```bash
+  curl -fsSL https://get.docker.com | sudo sh
+  sudo usermod -aG docker $USER    # rồi thoát SSH và đăng nhập lại
+  # Máy chỉ có 1 GB RAM: thêm 2 GB swap để build không bị thiếu bộ nhớ
+  sudo fallocate -l 2G /swapfile && sudo chmod 600 /swapfile && sudo mkswap /swapfile && sudo swapon /swapfile
+  echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+  ```
+
+**2. Tải source lên & cấu hình** (từ máy Windows, trong thư mục dự án)
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/deploy.ps1 -Server <user>@34.92.57.155
+```
+
+Lần đầu script sẽ dừng lại vì thiếu cấu hình. SSH vào server và tạo 2 file:
+
+```bash
+cd ~/nocturne
+cp .env.example .env && cp server/.env.example server/.env
+nano .env           # DOMAIN=ten-mien-cua-ban.com   (hoặc 34-92-57-155.sslip.io)
+nano server/.env    # AUTH_SECRET=<chạy: openssl rand -hex 32>, GOOGLE_CLIENT_ID=..., cấu hình Zalo...
+```
+
+**3. Chạy lại script** ở bước 2 → mở `https://<DOMAIN>`. Những lần cập nhật sau chỉ cần chạy lại đúng lệnh đó.
+
+| Việc                       | Lệnh (trên server, trong `~/nocturne`)                                   |
+| -------------------------- | ------------------------------------------------------------------------ |
+| Xem log                    | `docker compose logs -f app`                                              |
+| Khởi động lại              | `docker compose restart app`                                              |
+| Dừng                       | `docker compose down` (dữ liệu vẫn giữ trong volume)                      |
+| Sao lưu dữ liệu            | `docker run --rm -v nocturne_nocturne-data:/d -v $PWD:/b alpine tar czf /b/backup.tgz -C /d .` |
+
+Ghi chú:
+- Dữ liệu (`storage/data`) và token Zalo nằm trong Docker volume → build lại / cập nhật không mất dữ liệu.
+- `NODE_ENV=production` được đặt sẵn trong `docker-compose.yml`.
+- Đăng nhập Google: thêm `https://<DOMAIN>` vào *Authorized JavaScript origins* và `https://<DOMAIN>/api/auth/google/redirect` vào *Authorized redirect URIs*.
+- Đăng nhập Zalo ở production: cần `OTP_PROVIDER=zalo` (Zalo OA thật). Nếu chỉ muốn chạy demo, đặt `OTP_SHOW_CODE=true` để mã hiện trên màn hình;
+  không đặt gì thì nút Zalo tự ẩn (vì người dùng sẽ không nhận được mã).
+
+### Nhanh nhất: gói cài sẵn + 1 lệnh (không cần SSH từ máy bạn, không cần Docker)
+
+1. Trên máy bạn: `npm run release` → tạo `release/nocturne-release.tgz` (đã build sẵn, ~36 MB).
+2. Google Cloud Console → **VM instances** → bấm **SSH** ở máy chủ → trong cửa sổ SSH bấm **UPLOAD FILE** → chọn file trên.
+3. Dán lệnh:
+
+   ```bash
+   tar -xzf nocturne-release.tgz && bash nocturne/install.sh
+   ```
+
+   Script tải **Node.js 22 riêng** vào `~/nocturne/.runtime` (không đụng Node/app khác trên server), cài thư viện, tạo `server/.env`
+   (khoá bí mật ngẫu nhiên, bật chế độ demo OTP), chạy bằng PM2 ở cổng **8080** và bật tự khởi động cùng server.
+   Mở `http://<IP-server>:8080`. Đổi cổng: `PORT=9000 bash nocturne/install.sh`.
+4. Cập nhật phiên bản mới: lặp lại bước 1–3 (dữ liệu và `server/.env` được giữ nguyên).
+
+Quản lý: `~/nocturne/pm2 status`, `~/nocturne/pm2 logs music-app`, `~/nocturne/pm2 restart music-app`.
+
+### Cách khác: chạy bằng PM2 (không dùng Docker)
+
+> Dự án **không có `server.js`** — sau khi build, file chạy là `server/dist/index.js`. Dùng file `ecosystem.config.cjs` có sẵn
+> (đặt `NODE_ENV=production`, cho server thời gian lưu dữ liệu khi restart). **Chỉ chạy 1 instance** — dữ liệu JSON nằm trong bộ nhớ
+> tiến trình, chạy cluster/nhiều instance sẽ ghi đè dữ liệu của nhau.
+
+**Lần đầu trên server** (Debian/Ubuntu):
+
+```bash
+# Node.js 22 + PM2
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo npm install -g pm2
+```
+
+Từ máy Windows tải source lên (lần đầu script sẽ nhắc tạo `server/.env`):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/deploy.ps1 -Server <user>@34.92.57.155 -Mode pm2
+```
+
+Trên server:
+
+```bash
+cd ~/nocturne
+cp server/.env.example server/.env && nano server/.env    # AUTH_SECRET, GOOGLE_CLIENT_ID, ...
+npm ci && npm run build
+pm2 start ecosystem.config.cjs
+pm2 save
+pm2 startup        # chạy lệnh sudo mà nó in ra → app tự chạy lại khi server reboot
+```
+
+**HTTPS bằng Caddy** (cài thẳng trên server, app vẫn chạy ở cổng 4000):
+
+```bash
+sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+sudo apt update && sudo apt install -y caddy
+echo 'ten-mien-cua-ban.com {
+  reverse_proxy localhost:4000
+}' | sudo tee /etc/caddy/Caddyfile
+sudo systemctl reload caddy
+```
+
+Chưa cần HTTPS thì có thể mở cổng 4000 trên tường lửa và vào `http://34.92.57.155:4000` — nghe nhạc bình thường
+nhưng **không cài được PWA, không chạy offline và không đăng nhập Google được**.
+
+| Việc               | Lệnh                                                                  |
+| ------------------ | --------------------------------------------------------------------- |
+| Cập nhật code      | chạy lại `scripts/deploy.ps1 … -Mode pm2` (hoặc trên server: `npm ci && npm run build && pm2 reload music-app`) |
+| Xem log / mã OTP   | `pm2 logs music-app`                                                  |
+| Trạng thái         | `pm2 status`                                                          |
+| Sao lưu dữ liệu    | `tar czf backup.tgz -C ~/nocturne/server/storage data secrets`        |
+
 ## Dùng trên điện thoại
 
 1. Máy tính và điện thoại dùng chung Wi-Fi. Khi chạy, terminal in ra địa chỉ LAN, ví dụ `http://192.168.1.10:5173`.

@@ -1,0 +1,42 @@
+# Chạy trên server:   docker compose up -d --build
+#  - app:   Nocturne (API + giao diện) ở cổng 4000 nội bộ
+#  - caddy: reverse proxy, tự xin & gia hạn chứng chỉ HTTPS (Let's Encrypt) cho tên miền trong biến DOMAIN
+# Cần có: file .env (cạnh file này) chứa DOMAIN=..., và file server/.env (cấu hình app).
+
+services:
+  app:
+    build: .
+    image: nocturne:latest
+    restart: unless-stopped
+    env_file: server/.env
+    environment:
+      NODE_ENV: production
+      # Caddy chạy trong mạng nội bộ Docker (172.x) → tin header X-Forwarded-For từ dải IP nội bộ.
+      TRUST_PROXY: uniquelocal
+    volumes:
+      - nocturne-data:/app/server/storage/data
+      - nocturne-secrets:/app/server/storage/secrets
+    expose:
+      - '4000'
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on:
+      - app
+    ports:
+      - '80:80'
+      - '443:443'
+      - '443:443/udp'
+    environment:
+      DOMAIN: ${DOMAIN:?Hãy đặt DOMAIN trong file .env (ví dụ DOMAIN=34-92-57-155.sslip.io)}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+
+volumes:
+  nocturne-data:
+  nocturne-secrets:
+  caddy-data:
+  caddy-config:

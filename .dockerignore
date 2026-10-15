@@ -1,0 +1,12 @@
+**/node_modules
+**/dist
+.git
+*.log
+*.tgz
+
+# Dữ liệu đang chạy & bí mật — không bao giờ đóng gói vào image
+server/storage/data
+server/storage/secrets
+**/.env
+**/.env.*
+!**/.env.example

@@ -12,8 +12,8 @@ import type { Services } from './modules/services';
 export function createApp(config: AppConfig, services: Services): Express {
   const app = express();
   app.disable('x-powered-by');
-  // Lấy đúng IP người dùng khi chạy sau proxy/đường hầm cục bộ (cloudflared, nginx...) — dùng cho giới hạn gửi OTP.
-  app.set('trust proxy', 'loopback');
+  // Lấy đúng IP người dùng khi chạy sau reverse proxy (Caddy, nginx...) — dùng cho giới hạn gửi OTP.
+  app.set('trust proxy', config.trustProxy);
 
   if (config.corsOrigins.length > 0) app.use(cors({ origin: config.corsOrigins }));
   app.use(compression());

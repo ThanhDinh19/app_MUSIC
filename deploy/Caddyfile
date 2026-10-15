@@ -1,0 +1,11 @@
+# Caddy tự lấy chứng chỉ HTTPS cho {$DOMAIN} và chuyển hướng http → https.
+{$DOMAIN} {
+	reverse_proxy app:4000
+
+	header {
+		-Server
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+	}
+}

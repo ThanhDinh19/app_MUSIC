@@ -1,5 +1,6 @@
 node_modules/
 dist/
+release/
 *.tsbuildinfo
 
 # Dữ liệu đang chạy (tự tạo lại từ storage/seed khi khởi động) và token bí mật

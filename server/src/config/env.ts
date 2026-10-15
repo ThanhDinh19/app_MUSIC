@@ -34,6 +34,8 @@ const EnvSchema = z.object({
   MEDIA_BASE_URL: z.string().default('/media'),
   CLIENT_DIST_DIR: z.string().default('../client/dist'),
   CORS_ORIGINS: z.string().default(''),
+  /** Proxy được tin cậy (để lấy đúng IP người dùng): loopback | uniquelocal | true | số tầng proxy... */
+  TRUST_PROXY: z.string().default('loopback'),
   MSSQL_CONNECTION_STRING: z.string().optional(),
 
   // Đăng nhập
@@ -43,6 +45,8 @@ const EnvSchema = z.object({
   /** Nguồn khoá công khai để kiểm chữ ký ID token — chỉ đổi khi kiểm thử. */
   GOOGLE_JWKS_URL: z.string().url().default('https://www.googleapis.com/oauth2/v3/certs'),
   OTP_PROVIDER: z.enum(['console', 'zalo']).default('console'),
+  /** Chỉ cho bản demo: hiện mã OTP ngay trên màn hình kể cả ở production (OTP_PROVIDER=console). */
+  OTP_SHOW_CODE: z.enum(['true', 'false']).default('false'),
   ZALO_APP_ID: z.string().optional(),
   ZALO_APP_SECRET: z.string().optional(),
   ZALO_OA_REFRESH_TOKEN: z.string().optional(),
@@ -83,6 +87,7 @@ export const config = {
   mediaBaseUrl: env.MEDIA_BASE_URL.replace(/\/+$/, ''),
   clientDistDir: fromRoot(env.CLIENT_DIST_DIR),
   corsOrigins: env.CORS_ORIGINS.split(',').map((s) => s.trim()).filter(Boolean),
+  trustProxy: parseTrustProxy(env.TRUST_PROXY),
   mssqlConnectionString: env.MSSQL_CONNECTION_STRING,
   auth: {
     secret: env.AUTH_SECRET ?? randomBytes(32).toString('hex'),
@@ -90,6 +95,7 @@ export const config = {
     googleClientId: blank(env.GOOGLE_CLIENT_ID),
     googleJwksUrl: env.GOOGLE_JWKS_URL,
     otpProvider: env.OTP_PROVIDER,
+    otpShowCode: env.OTP_SHOW_CODE === 'true',
     zalo: {
       appId: blank(env.ZALO_APP_ID),
       appSecret: blank(env.ZALO_APP_SECRET),
@@ -104,3 +110,11 @@ export const config = {
 } as const;
 
 export type AppConfig = typeof config;
+
+/** "true"/"false" → boolean, "1" → số tầng proxy, còn lại giữ nguyên chuỗi (vd. "loopback, uniquelocal"). */
+function parseTrustProxy(value: string): boolean | number | string {
+  if (value === 'true') return true;
+  if (value === 'false') return false;
+  if (/^\d+$/.test(value)) return Number(value);
+  return value;
+}
