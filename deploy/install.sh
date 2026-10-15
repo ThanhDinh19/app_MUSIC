@@ -2,22 +2,37 @@
 # ──────────────────────────────────────────────────────────────────────────────
 # Cài đặt / cập nhật Nocturne trên server Linux và chạy bằng PM2 (mặc định cổng 8080).
 #
-#   tar -xzf nocturne-release.tgz && bash nocturne/install.sh
-#   PORT=9000 bash nocturne/install.sh          # chọn cổng khác
+# Từ source (git clone):   cd app_MUSIC && git pull && bash deploy/install.sh
+# Từ gói build sẵn:        tar -xzf nocturne-release.tgz && bash nocturne/install.sh
+# Chọn cổng khác:          PORT=9000 bash deploy/install.sh
 #
-# - Dùng Node.js 22 RIÊNG trong nocturne/.runtime → không đụng tới Node / app khác đang chạy trên server.
-# - Chạy lại script này để cập nhật: dữ liệu (server/storage/data) và cấu hình (server/.env) được giữ nguyên.
+# - Dùng Node.js 22 RIÊNG trong thư mục .runtime → không đụng tới Node / app khác đang chạy trên server.
+# - Chạy lại để cập nhật: dữ liệu (server/storage/data) và cấu hình (server/.env) được giữ nguyên.
 # ──────────────────────────────────────────────────────────────────────────────
 set -euo pipefail
 
-APP_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+say() { printf '\n\033[1;36m==> %s\033[0m\n' "$*"; }
+fail() { printf '\n\033[1;31m❌ %s\033[0m\n' "$*"; exit 1; }
+
+# Thư mục app: script nằm ở gốc (gói build sẵn) hoặc trong deploy/ (source git).
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ -f "$SCRIPT_DIR/package.json" ]; then APP_DIR="$SCRIPT_DIR"; else APP_DIR="$(dirname "$SCRIPT_DIR")"; fi
+[ -f "$APP_DIR/package.json" ] && [ -f "$APP_DIR/ecosystem.config.cjs" ] || fail "Không tìm thấy thư mục app (package.json, ecosystem.config.cjs)."
+cd "$APP_DIR"
+FROM_SOURCE=0
+[ -d server/src ] && [ -d client/src ] && FROM_SOURCE=1
+
 RUNTIME="$APP_DIR/.runtime"
 NODE_DIR="$RUNTIME/node"
 APP_NAME="music-app"
-cd "$APP_DIR"
-
-say() { printf '\n\033[1;36m==> %s\033[0m\n' "$*"; }
-fail() { printf '\n\033[1;31m❌ %s\033[0m\n' "$*"; exit 1; }
+RUN_USER="$(id -un)"
+if [ "$(id -u)" -eq 0 ]; then
+  SUDO=""
+  CAN_SUDO=1
+else
+  SUDO="sudo -n"
+  if sudo -n true 2>/dev/null; then CAN_SUDO=1; else CAN_SUDO=0; fi
+fi
 
 # Cổng: ưu tiên biến PORT, sau đó cấu hình đã lưu trong server/.env, mặc định 8080.
 if [ -z "${PORT:-}" ] && [ -f server/.env ]; then
@@ -25,10 +40,11 @@ if [ -z "${PORT:-}" ] && [ -f server/.env ]; then
 fi
 PORT="${PORT:-8080}"
 
-command -v curl >/dev/null || fail "Server cần có curl (sudo apt-get install -y curl)."
+command -v curl >/dev/null || fail "Server cần có curl (apt-get install -y curl)."
+[ -f server/storage/seed/songs.json ] || fail "Thiếu dữ liệu mẫu server/storage/seed (chạy npm run content:generate trên máy bạn rồi push lên)."
 
 # ── 1. Node.js 22 riêng cho Nocturne ─────────────────────────────────────────
-say "Chuẩn bị Node.js 22 (riêng cho Nocturne)"
+say "Chuẩn bị Node.js 22 (riêng cho Nocturne, không ảnh hưởng app khác)"
 if [ ! -x "$NODE_DIR/bin/node" ]; then
   case "$(uname -m)" in
     x86_64 | amd64) ARCH=x64 ;;
@@ -51,9 +67,16 @@ export NOCTURNE_NODE="$NODE_DIR/bin/node"
 export NOCTURNE_PORT="$PORT"
 echo "    node $(node -v), npm $(npm -v)"
 
-# ── 2. Thư viện production ───────────────────────────────────────────────────
-say "Cài thư viện (npm ci)"
-npm ci --omit=dev --workspace @nocturne/server --no-audit --no-fund --loglevel=error
+# ── 2. Thư viện (+ build nếu chạy từ source) ─────────────────────────────────
+if [ "$FROM_SOURCE" -eq 1 ]; then
+  say "Cài thư viện & build từ source (lần đầu mất vài phút)"
+  npm ci --no-audit --no-fund --loglevel=error
+  npm run build
+else
+  say "Cài thư viện (npm ci)"
+  npm ci --omit=dev --workspace @nocturne/server --no-audit --no-fund --loglevel=error
+fi
+[ -f server/dist/index.js ] && [ -f client/dist/index.html ] || fail "Thiếu bản build (server/dist, client/dist)."
 
 # ── 3. Cấu hình (chỉ tạo lần đầu) ────────────────────────────────────────────
 if [ ! -f server/.env ]; then
@@ -85,7 +108,7 @@ fi
 
 # Cổng đang bị chương trình khác chiếm (không phải Nocturne) → dừng lại thay vì làm hỏng app khác.
 if ! "$PM2" describe "$APP_NAME" >/dev/null 2>&1; then
-  if (command -v ss >/dev/null && ss -ltn 2>/dev/null | grep -qE "[:.]$PORT[[:space:]]") ; then
+  if command -v ss >/dev/null && ss -ltn 2>/dev/null | grep -qE "[:.]$PORT[[:space:]]"; then
     fail "Cổng $PORT đang được chương trình khác sử dụng. Chạy lại với cổng khác, ví dụ: PORT=8081 bash $0"
   fi
 fi
@@ -93,7 +116,7 @@ fi
 "$PM2" startOrReload ecosystem.config.cjs --update-env
 "$PM2" save >/dev/null
 
-# Lệnh tắt ~/nocturne/pm2 — luôn chạy PM2 với đúng Node.js của Nocturne (dùng được trong mọi phiên SSH mới).
+# Lệnh tắt ./pm2 — luôn chạy PM2 với đúng Node.js của Nocturne (dùng được trong mọi phiên SSH mới).
 cat > "$APP_DIR/pm2" <<EOF
 #!/usr/bin/env bash
 export PATH="$NODE_DIR/bin:\$PATH"
@@ -101,18 +124,18 @@ exec "$PM2" "\$@"
 EOF
 chmod +x "$APP_DIR/pm2"
 
-# Tự chạy lại khi server khởi động lại (cần sudo không mật khẩu — mặc định trên Google Cloud).
-if command -v systemctl >/dev/null 2>&1 && [ -d /run/systemd/system ] && sudo -n true 2>/dev/null; then
-  if ! systemctl is-enabled "pm2-$USER" >/dev/null 2>&1; then
-    sudo env PATH="$PATH" "$PM2" startup systemd -u "$USER" --hp "$HOME" >/dev/null 2>&1 \
+# Tự chạy lại khi server khởi động lại.
+if command -v systemctl >/dev/null 2>&1 && [ -d /run/systemd/system ] && [ "$CAN_SUDO" -eq 1 ]; then
+  if ! systemctl is-enabled "pm2-$RUN_USER" >/dev/null 2>&1; then
+    $SUDO env PATH="$PATH" "$PM2" startup systemd -u "$RUN_USER" --hp "$HOME" >/dev/null 2>&1 \
       && echo "    Đã bật tự khởi động cùng server" \
-      || echo "    (Chưa bật được tự khởi động — có thể chạy: pm2 startup)"
+      || echo "    (Chưa bật được tự khởi động — có thể chạy: $APP_DIR/pm2 startup)"
   fi
 fi
 
 # Tường lửa bên trong máy (nếu đang bật ufw)
-if command -v ufw >/dev/null 2>&1 && sudo -n ufw status 2>/dev/null | grep -q "Status: active"; then
-  sudo -n ufw allow "$PORT/tcp" >/dev/null && echo "    Đã mở cổng $PORT trên ufw"
+if [ "$CAN_SUDO" -eq 1 ] && command -v ufw >/dev/null 2>&1 && $SUDO ufw status 2>/dev/null | grep -q "Status: active"; then
+  $SUDO ufw allow "$PORT/tcp" >/dev/null && echo "    Đã mở cổng $PORT trên ufw"
 fi
 
 # ── 5. Kiểm tra ──────────────────────────────────────────────────────────────

@@ -1,6 +1,9 @@
 node_modules/
 dist/
 release/
+# Node.js riêng & lệnh tắt PM2 do deploy/install.sh tạo trên server
+.runtime/
+/pm2
 *.tsbuildinfo
 
 # Dữ liệu đang chạy (tự tạo lại từ storage/seed khi khởi động) và token bí mật
